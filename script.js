@@ -16,7 +16,7 @@ function timeUpdate() {
   timeSpot.text(timeDisplay);
 }
 timeUpdate();
-setInterval(timeUpdate, 6000)
+setInterval(timeUpdate, 60000)
 
 
 
@@ -78,15 +78,15 @@ console.log(timeCheckArry[4].data('number'))
 
 
 $('button').on('click', function () {
-  localStorage.setItem('9am', $9.val())
-  localStorage.setItem('10am', $10.val())
-  localStorage.setItem('11am', $11.val())
-  localStorage.setItem('12am', $12.val())
-  localStorage.setItem('13am', $13.val())
-  localStorage.setItem('14am', $14.val())
-  localStorage.setItem('15am', $15.val())
-  localStorage.setItem('16am', $16.val())
-  localStorage.setItem('17am', $17.val())
+  localStorage.setItem('9am', $('#9').val())
+  localStorage.setItem('10am', $('#10').val())
+  localStorage.setItem('11am',$('#11').val())
+  localStorage.setItem('12am', $('#12').val())
+  localStorage.setItem('13am', $('#13').val())
+  localStorage.setItem('14am', $('#14').val())
+  localStorage.setItem('15am', $('#15').val())
+  localStorage.setItem('16am', $('#16').val())
+  localStorage.setItem('17am', $('#17').val())
 })
 $(document).ready(function () {
   $('#9').val(localStorage.getItem('9am'));
